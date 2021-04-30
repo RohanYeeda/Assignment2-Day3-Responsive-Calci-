@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=yes" >
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         <link href="style.css" rel="stylesheet">
+         
+        <title>SIMPLE CALCULATOR</title>
+    </head>
+    <body style="background-image: url(https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg); text-align: center;">
+        <h1><mark>CALCULATOR</mark></h1>
+        <hr>
+        <div class="calculator-box">
+        <div class="container-fluid">
+        <form name="calculator" method="POST" class="form-horizontal">
+          <input type="text" name="ans" value="" style="text-align: center;font-size: 3vw;color: black; width: 24.9vw;height: 8vw;" id="result" placeholder="0" readonly>
+            <input type="button" class="btn btn-success" value="C" onclick="document.calculator.ans.value=''"  style="background-color:rgb(138, 140, 245); font-size: 3vw;">
+          <br>
+          <div class="row">
+              <input type="button" value="1" class="btn btn-info" onclick=" val('1')" id="a">
+             <input type="button" value="2" class="btn btn-info" onclick="val('2')" id="a">
+               <input type="button" value="3" class="btn btn-info"  onclick="val('3')" id="a">
+              
+              <input type="button" value="+" class="btn btn-success" onclick="val('+')" id="a" >
+   
+          <br>
+          </div>
+          <div class="row">
+            <input type="button" value="4"  class="btn btn-info" onclick="val('4')" id="a">
+            <input type="button" value="5"  class="btn btn-info"  onclick="val('5')" id="a">
+            <input type="button" value="6"  class="btn btn-info" onclick="val('6')" id="a">
+           <input type="button" value="-"  class="btn btn-success"  onclick="val('-')" id="a">
+          <br>
+          </div>
+          <div class="row">
+
+         <input type="button" value="7"  class="btn btn-info"  onclick="val('7')" id="a">
+          <input type="button" value="8"  class="btn btn-info"  onclick="val('8')" id="a">
+          <input type="button" value="9"  class="btn btn-info"  onclick="val('9')" id="a">
+         <input type="button" value="x"  class="btn btn-success"  onclick="val('*')" id="a" >
+          <br>
+          </div>
+          <div class="row">
+            <input type="button" value="."   class="btn btn-info"  onclick="val('.')" id="a">
+            <input type="button" value="0"   class="btn btn-info" onclick="val('0')" id="a">
+            <input type="button" value="="   class="btn btn-info" onclick="cal()" id="a">
+             <input type="button" value="/"   class="btn btn-success"  onclick="val('/')" id="a" >
+            </div>
+
+
+
+
+         </h2> 
+
+        </form>
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

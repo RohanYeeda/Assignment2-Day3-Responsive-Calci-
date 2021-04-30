@@ -1,0 +1,33 @@
+input[type="button"]
+{
+
+color: black;
+border: solid black 2px;
+width: 8vw;
+height: 8vw;
+}
+
+input[type="text"]
+{
+background-color:white;
+border: solid black 2px;
+width: 5vw;
+height: 5vw;
+
+}
+#a
+{
+    font-size: 3vw;
+    font-style: italic;
+    
+}
+form{
+    margin: auto;
+    background-color: mintcream;
+    background-image: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+}
+.form-horizontal{
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 20px 20px black;
+} 
